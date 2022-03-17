@@ -1,2 +1,2 @@
 # TiendaOnline
-Proyecto de Clase Programacion Distribuido
+Proyecto de Clase Programacion Distribuida
