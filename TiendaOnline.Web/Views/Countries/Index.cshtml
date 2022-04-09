@@ -11,7 +11,7 @@
 <br />
 
 <p>
-    <a asp-action="Create" class="btn btn-primary"><i class="fas fa-plus"></i> Add New</a>
+    <a asp-action="Create" class="btn btn-success"><i class="fas fa-plus"></i> Add New</a>
 </p>
 
 <div class="row">
@@ -27,6 +27,9 @@
                             <th>
                                 @Html.DisplayNameFor(model => model.name)
                             </th>
+                            <th>
+                                @Html.DisplayNameFor(model=>model.DepartmentsNumber)
+                            </th>
                             <th></th>
                         </tr>
                     </thead>
@@ -36,6 +39,9 @@
                             <tr>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.name)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DepartmentsNumber)
                                 </td>
                                 <td>
                                     <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-warning"><i class="fas fa-edit"></i></a>
